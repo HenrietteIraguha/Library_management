@@ -1,43 +1,49 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:BOOK-{####}",
- "creation": "2026-02-05 16:50:08.737552",
+ "autoname": "format:MEM-{#####}",
+ "creation": "2026-02-09 16:36:07.474664",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "title",
-  "isbn",
-  "status"
+  "first_name",
+  "last_name",
+  "email",
+  "phone"
  ],
  "fields": [
   {
-   "fieldname": "title",
+   "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Title",
+   "label": "First name",
    "reqd": 1
   },
   {
-   "fieldname": "isbn",
+   "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "ISBN"
+   "label": "Last name"
   },
   {
-   "default": "Available",
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Available\nRented\nLost"
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-09 17:21:53.045102",
+ "modified": "2026-02-09 17:22:43.802740",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Book",
+ "name": "Library Member",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -55,7 +61,7 @@
   }
  ],
  "row_format": "Dynamic",
- "search_fields": "title",
+ "search_fields": "first_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
