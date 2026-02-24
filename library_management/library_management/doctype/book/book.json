@@ -8,7 +8,8 @@
  "field_order": [
   "title",
   "isbn",
-  "status"
+  "status",
+  "authors"
  ],
  "fields": [
   {
@@ -29,12 +30,19 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Available\nRented\nLost"
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Table",
+   "label": "Authors",
+   "options": "Author Detail",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-10 17:43:34.136572",
+ "modified": "2026-02-16 16:51:43.923646",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",

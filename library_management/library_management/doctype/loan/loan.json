@@ -11,7 +11,8 @@
   "applicant",
   "book",
   "transaction_date",
-  "status"
+  "status",
+  "applicant_name"
  ],
  "fields": [
   {
@@ -49,21 +50,26 @@
    "fieldname": "transaction_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Transaction Date",
-   "reqd": 1
+   "label": "Transaction Date"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
    "options": "Draft\nReturned\nOverdue"
+  },
+  {
+   "fetch_from": "applicant.full_name",
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicant name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-11 16:49:19.160655",
+ "modified": "2026-02-23 16:15:40.967178",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Loan",
